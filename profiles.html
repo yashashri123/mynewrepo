@@ -1,0 +1,53 @@
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+
+
+
+<body>
+
+  <div class="container">
+    <span>Welcome :</span><span id="login-user"></span>
+    <table class="table table-dark table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Age</th>
+          <!-- <th scope="col">Mobile No.</th> -->
+          <th scope="col">Email-id</th>
+          <th scope="col">Actions</th>
+        </tr>
+      </thead>
+      <tbody id="tbl-data">
+       
+      </tbody>
+    </table>
+  </div>
+
+
+ 
+
+
+  <script src="js/jquery-3.6.4.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+
+  <script>
+    if (localStorage.getItem("login") == null) {
+      openPage("login")
+    }
+    else{
+      showProfiles()
+    }
+  
+  </script>
+</body>
+
+</html>
